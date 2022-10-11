@@ -71,15 +71,17 @@
     padding-top: 20vh;
   }
   #titulo-container {
-    min-width: 90vw;
+    min-width: auto;
     width: 90vw;
   }
   #sentence-container {
     flex-direction: column;
-    width: 90vw;
+    min-width: 0;
   }
   #sentence-container #sentence-box {
     margin: 0%;
+    min-width: 0;
+    width: 90vw;
   }
   #sentence-container #copy-box {
     margin: 5%;

@@ -71,6 +71,7 @@
     padding-top: 20vh;
   }
   #titulo-container {
+    min-width: 90vw;
     width: 90vw;
   }
   #sentence-container {

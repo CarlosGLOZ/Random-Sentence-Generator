@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/index.css">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="main">
+        <div id="titulo-container">
+            <p id="titulo">RANDOM SENTENCE GENERATOR</p>
+        </div>
+        <div id="copied-alert">
+            <p id="copied-alert-text">Copied!</p>
+        </div>
+        <div id="sentence-container">
+            <input type="text" readonly id="sentence-box" value="">
+            <div id="copy-box"><img src="./img/icons/copy-solid.svg" alt="copy" id="copy-button" onclick="copyText()"></div>
+        </div>
+        <div id="reroll-button-container">
+            <button id="reroll-button" onclick="generateSentence()"><img src="./img/icons/arrows-rotate-solid.svg" alt="reload" id="reroll-icon"></button>
+        </div>
+        <script src="./js/index.js"></script>
+    </div>
+</body>
+
+</html>

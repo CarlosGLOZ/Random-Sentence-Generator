@@ -1,0 +1,90 @@
+#main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 30vh;
+  background-color: beige;
+}
+#titulo-container #titulo {
+  font-size: 50px;
+  text-align: center;
+}
+#copied-alert {
+  transition: 0.5s;
+  height: 3%;
+  margin-bottom: 1%;
+}
+#copied-alert #copied-alert-text {
+  height: 100%;
+  color: transparent;
+  transition: 0.5s;
+  display: none;
+}
+#sentence-container {
+  width: 35%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  overflow-x: visible;
+  margin-bottom: 2%;
+  min-width: 470px;
+}
+#sentence-container #sentence-box {
+  border: solid;
+  width: 100%;
+  min-height: 100%;
+  height: fit-content;
+  margin-left: 30px;
+  background-color: aliceblue;
+  text-align: center;
+  font-size: 30px;
+}
+#sentence-container #copy-box {
+  width: 30px;
+  margin-left: 2%;
+}
+#reroll-button {
+  width: 100px;
+  height: 100px;
+  border-radius: 40px;
+  background-color: #252525;
+  transition: 0.5s;
+}
+#reroll-button #reroll-icon {
+  filter: invert();
+}
+#reroll-button:hover {
+  background-color: #ffffff;
+}
+#reroll-button:hover #reroll-icon {
+  filter: none;
+}
+#reroll-icon {
+  width: 70%;
+  height: 70%;
+  transition: 0.5s;
+}
+@media only screen and (max-width: 600px) {
+  #main {
+    padding-top: 20vh;
+  }
+  #titulo-container {
+    width: 90vw;
+  }
+  #sentence-container {
+    flex-direction: column;
+    width: 90vw;
+  }
+  #sentence-container #sentence-box {
+    margin: 0%;
+  }
+  #sentence-container #copy-box {
+    margin: 5%;
+  }
+  #reroll-button-container {
+    position: absolute;
+    bottom: 5%;
+  }
+}

@@ -31,18 +31,19 @@ function generateSentence() {
         'Y me la vuelvo a follar',
         'Gilipollas',
         ' ',
-        'Tontito'
+        'Tontito',
+        '   '
     ];
 
     var currentIndex = sentences.indexOf(text.value);
     var nextIndex;
 
     if (currentIndex == (sentences.length - 1)) {
-        nextIndex = 0;
+        // nextIndex = 0;
+        text.value = sentences[currentIndex];
+        return;
     } else {
         nextIndex = currentIndex + 1;
     }
-    console.log(nextIndex);
-
     text.value = sentences[nextIndex];
 }

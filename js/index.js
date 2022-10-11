@@ -47,5 +47,3 @@ function generateSentence() {
     }
     text.value = sentences[nextIndex];
 }
-
-console.log(getComputedStyle(document.getElementById()))
